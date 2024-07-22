@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>SHOPPING CART</h1>
+    <div class="line" id="line1">
+    <div class="good">
+<img src="https://media.istockphoto.com/id/1495674111/photo/triple-scoop-pastel-theme-ice-cream-cone-isolated-on-a-white-background.webp?b=1&s=170667a&w=0&k=20&c=ovkegnnEeDPR1qhXNTRk9EGG2lOE-MLNxisPrncvO0Q=" alt="" height="100px" weight="100px"`>
+<div class="details">
+<h2 class="ice-cream">Multi-color Gelato</h2>
+<p>Cost price:$<span id="price1">60</span></p>
+<button class="btn"  onclick="increment()">+</button>
+<span class="counter" id="counter">0</span>
+<button class="btn" onclick="decrement()">-</button>
+<i id="trash1"  class="fa fa-trash fa-2x"></i>
+<i id="heart1" onclick="Toggle1()" class="fa fa-heart fa-2x"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="line" id="line2" >
+<div class="good">
+    <img src="https://media.istockphoto.com/id/471317762/photo/vanilla-ice-cream-cone.webp?b=1&s=170667a&w=0&k=20&c=oM8dWqRfT8azfO-uW5jl1bjSCAut1vzF6r18elVz_ys=" alt="" height="100px" weight="100px">
+    <div class="details">
+    <h2 class="ice-cream">Creamy Gelato</h2>
+    <p>Cost price:$<span id="price2">50</span></p>
+    <button class="btn2" onclick="increment2()">+</button>
+    <span  class="counter2" id="counter2">0</span>
+    <button class="btn2"  onclick="decrement2()">-</button>
+    <i id="trash2" class="fa fa-trash fa-2x"></i>
+    <i id="heart2" onclick="Toggle2()" class="fa fa-heart fa-2x"></i>
+
+</div>
+  </div>
+</div>
+<div class="line" id="line3">
+<div class="good">
+    <img src="https://media.istockphoto.com/id/1396897706/photo/vanilla-soft-serve-ice-cream-cone.jpg?s=612x612&w=0&k=20&c=08Mxwh6P1TGNFb9RSdE1S-Nb_0ayvuF8jDz9irzV7Wg=" alt="" height="100px" weight="100px">
+    <div class="details">
+    <h2 class="ice-cream">White Gelato</h2>
+    <p>Cost price:$<span id="price1">30</span></p>
+    <button class="btn3"  onclick="increment3()">+</button>
+    <span id="counter3" class="counter3">0</span>
+    <button class="btn3" onclick="decrement3()" >-</button>
+    <i id="trash3" class="fa fa-trash fa-2x"></i>
+    <i id="heart3" onclick="Toggle3()" class="fa fa-heart fa-2x"></i>
+      </div>
+   </div>
+</div>
+<div class="total-price">
+    <span>Total Price:$</span>
+    <span id="total">0</span>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
